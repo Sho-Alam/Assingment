@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10%;
+    gap: ;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+} 
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    text-decoration: none;
+}
+nav div {
+    font-size: 30px;
+    font-weight: 700;
+}
+.link {
+    list-style: none;
+    cursor: pointer;
+}
+.link:hover {
+    text-decoration: underline;
+    font-size: 900;
+ }
+ button {
+    background-color:#00ffff;
+    padding: 4px 10px ;
+    color: #fff;
+    border: 1px solid #000;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    width: fit-content;
+ }
+ button:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+ }
+.hero section {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px 16%;
+}
+.left h1 {
+    font-size: 40px;
+    margin: 2%;
+    font-weight: 700;
+}
+ .hero h1 span {
+    color: #00ffff;
+    font-size: 40px;
+    font-weight: 2.5 rem;
+ }
+ .hero p {
+    font-weight: 700;
+ }
+ .hero p span {
+    font-weight: 800;
+    font: size 75px; 
+    color: #00ffff;
+
+ }
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px 16% ;
+    gap: 30px;
+}
+.herobtns {
+    display: flex;
+    align-items: center;
+    gap30px 
+}

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #edf1fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+button {
+    background-color: rgb(28, 222, 236);
+    padding: 4px 10px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+nav div {
+    font-weight: 700;
+    font-size: 30px
+    
+    
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 500;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.nav-box {
+    display: flex;
+    gap: 30px;
+}
+
+input {
+    padding: 4px 10px;
+}
+
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.hero-left-context h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700px;
+}
+.hero-left-context h1 span {
+    color: #02240a;
+    font-weight: 900;
+    font-size: 2.5 rem;
+}
+.hero-left-context p {
+    font-weight: 500;
+}
+.hero-left-context p span {
+    font-weight: 700;
+    font-size: 25px;
+    color: #02801e;
+}
+.hero-right-context {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10%;
+    gap: 30px;
+}
+
+.hero-right-btns {
+    display: flex;
+    align-items: center;
+   gap: 30px;
+}
+.hero-right-context img {
+    height: 300px;
+    width: 300px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    padding: 20px 10%;
+    justify-content: center;
+}
+footer p {
+        font-weight: 600;
+}
+
+footer ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
