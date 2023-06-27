@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key frames</title>
+
+    <style>
+.container {
+    border: 2px solid #000;
+    height: 400px;
+    width: 400px;
+
+}
+
+.box {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    animation-name:shoaib;
+    animation-duration:30s;
+    animation-delay: 2s;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes shoaib {
+   0%{
+    top: 0px;
+    left: 0px;
+   }
+   25%{
+    background-color: blue;
+    top: 0px;
+    left: 300px;
+   }
+
+   50% {
+    top: 300px;
+    left: 300px;
+    background-color: chartreuse;
+   }
+   
+   75% {
+    top: 300px;
+    left: 0px;
+    background-color: #f16514;
+
+   }
+
+   100% {
+    top: 0px;
+    /* right: 0px; */
+   }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>This is a box</p>
+        </div>
+    </div>
+</body>
+</html>
