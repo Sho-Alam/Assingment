@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toggle Heading Text</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background: #e59cda;
+        }
+        button{
+            background-color: aqua;
+            color: #46258d;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 10px 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">The most affordable learning platform</h1>
+    <button id="toggle-btn">Click here to change</button>
+
+    
+    <script>
+      const heading = document.getElementById('heading');
+      const toggleBtn = document.getElementById('toggle-btn');
+
+      toggleBtn.addEventListener('click', () => {
+        if (heading.textContent === 'The most affordable learning platform') {
+          heading.textContent = 'PW Skills';
+        } else {
+          heading.textContent = 'The most affordable learning platform';
+        }
+      });
+    </script>
+  </body>
+</html>

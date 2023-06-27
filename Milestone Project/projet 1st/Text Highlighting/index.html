@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Highlighting</title>
+</head>
+<body>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  <body>
+    <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod euismod mi, ac varius sapien varius in. Mauris consequat arcu at nunc lacinia blandit. Vestibulum vel gravida quam. Duis vulputate leo id convallis interdum.</p>
+    
+    <script>
+      let paragraph = document.getElementById("paragraph"); // get the paragraph element by its ID
+      let words = paragraph.innerHTML.split(" "); // split the text into an array of words
+      for (let i = 0; i < words.length; i++) {
+        if (words[i].length > 8) { // if the word has more than 8 characters
+          words[i] = "<span class='highlight'>" + words[i] + "</span>"; // wrap the word in a span with a highlight class
+        }
+      }
+      paragraph.innerHTML = words.join(" "); // join the array of words back into a string and set the HTML of the paragraph element to the new string
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Move Image With Arrow Key</title>
+    <style>
+      #image {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="image" src="./pc.jpeg" alt="Image" height="300px" />
+
+    <script>
+      var image = document.getElementById("image"); // get the image element by its ID
+      var x = 0; // initial x position
+      var y = 0; // initial y position
+      var step = 10; // distance to move in each step
+      document.addEventListener("keydown", function (event) {
+        // listen for keydown events on the document
+        if (event.key === "ArrowUp") {
+          // if the up arrow key is pressed
+          y -= step; // decrease the y position
+          image.style.top = y + "px"; // set the new y position
+        } else if (event.key === "ArrowDown") {
+          // if the down arrow key is pressed
+          y += step; // increase the y position
+          image.style.top = y + "px"; // set the new y position
+        } else if (event.key === "ArrowLeft") {
+          // if the left arrow key is pressed
+          x -= step; // decrease the x position
+          image.style.left = x + "px"; // set the new x position
+        } else if (event.key === "ArrowRight") {
+          // if the right arrow key is pressed
+          x += step; // increase the x position
+          image.style.left = x + "px"; // set the new x position
+        }
+      });
+    </script>
+  </body>
+</html>

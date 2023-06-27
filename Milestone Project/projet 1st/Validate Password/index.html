@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <style>
+      .error {
+        color: #f00909;
+      }
+
+      .success {
+        color: #008000;
+      }
+      body{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: wheat;
+      }
+      form{
+        background-color: aqua;
+        width: fit-content;
+        border-radius: 10px;
+        display: flex;
+        padding: 70px 50px;
+        flex-direction: column;
+      }
+      label{
+        font-size: 25px;
+      } 
+    </style>
+  </head>
+  <body>
+    <form id="login-form">
+      <label>Email:</label>
+      <input type="text" name="email" id="email" required />
+      <br />
+      <label>Password:</label>
+      <input type="password" name="password" id="password" required />
+      <br />
+      <input type="submit" value="Login" />
+      <p id="validation-message"></p>
+    </form>
+
+
+    <script>
+      const form = document.querySelector("#login-form");
+      const emailInput = document.querySelector("#email");
+      const passwordInput = document.querySelector("#password");
+      const validationMessage = document.querySelector("#validation-message");
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const email = emailInput.value.trim();
+        const password = passwordInput.value.trim();
+
+        if (!email.includes("@") || password.length < 8) {
+          validationMessage.textContent = "Invalid email or password!";
+          validationMessage.classList.remove("success");
+          validationMessage.classList.add("error");
+        } else {
+          validationMessage.textContent = "Valid email and password!";
+          validationMessage.classList.remove("error");
+          validationMessage.classList.add("success");
+        }
+      });
+    </script>
+  </body>
+</html>

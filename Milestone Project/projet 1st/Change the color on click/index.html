@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color Changer</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <title>Change Background Color</title>
+    <button onclick="changeColor()">Change Color</button>
+    <script>
+      var colors = ["red", "green", "blue", "yellow", "orange", "purple"]; // an array of colors
+      function changeColor() {
+        var randomIndex = Math.floor(Math.random() * colors.length); // generate a random index from the array
+        var randomColor = colors[randomIndex]; // get the color at that index
+        document.body.style.backgroundColor = randomColor; // set the background color of the body to the random color
+      }
+    </script>
+  </body>
+</html>

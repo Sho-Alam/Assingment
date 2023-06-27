@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Validator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <div id="item">
+            <!-- NewPassword -->
+            <p >New Password</p>
+            <input type="Password" value="" placeholder="Enter Your Password" id="newPass">
+
+            <!-- confirmpassword -->
+            <p>Confirm Password</p>
+            <input type="Password" value="" placeholder=" Confirm Your Password" id="confirmPass">
+
+            <p id="message"></p>
+        <div>
+
+            <input type="button" value="SUBMIT" onclick="checkPassword()" id="submitBtn">
+        </div>
+        </div>
+    </form>   
+    <script src="./script.js"></script>
+</body>
+</html>
