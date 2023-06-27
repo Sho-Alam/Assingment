@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+body {
+    width: 100%;
+    background-color: #f0f4f5;
+    overflow: hidden;
+    margin: auto;
+}
+
+nav {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+nav img{
+    width: 200px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin-right: 50px;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+nav ul li a:hover{
+    color: #20bc7e;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    padding: 0 5%;
+    text-align: center;
+
+}
+
+
+.description {
+    width: 50%;
+    text-align: center;
+}
+
+.description h1 {
+    color: #20bc7e;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.acheivement {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.acheivementCard{
+    width: 200px;
+    height: 100px;
+    box-shadow: 0 0 10px #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.acheivementCard span {
+    color: #20bc7e;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.acheivementCard p {
+    font-size: 20px;
+    font-weight: 500;
+}
