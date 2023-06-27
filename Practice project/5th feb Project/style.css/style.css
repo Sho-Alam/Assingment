@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    width: 100wh;
+    height: 100vh;
+    background-image: url(../Assets/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    background: #000;
+    height: 80px;
+}
+
+nav img {
+    margin-left: 65px;
+    /* margin-top: 10px; */
+}
+
+.line {
+    height: 45px;
+    width: 45px;
+    color: #000;
+}
+
+nav ul {
+    display: flex;
+    gap: 40px;
+    font-size: 17px;
+}
+
+a {
+    color: #fff;
+    cursor:pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+nav button {
+    padding: 7px 25px;
+    margin-right: 30px;
+    border-radius: 10px;
+    color:#20a0c7;
+    border:none;
+    cursor: pointer;
+    font-size: 15px;
+    /* box-shadow: 2px 2px 2px #fff; */
+}
+
+nav button:hover {
+background-color: transparent;
+border: 2px solid #ffffff;
+color: #ffffff;
+}
+
+/* main {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 200px;
+} */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.left-section h1 {
+    font-size: 75px;
+}
+
+.left-section p {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.right-section button {
+    padding: 10px 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    box-shadow: -5px -5px 5px #000;
+}
+
+.right-section button:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+
+
+   
+
+
+
+
+    

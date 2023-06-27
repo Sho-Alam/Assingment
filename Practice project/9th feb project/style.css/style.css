@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    width: 100wh;
+    height: 100vh;
+    background-color: aqua;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.large-leptop,
+.leptop,
+.tablet,
+.mobile {
+    font-size: 40px;
+    text-align: center;
+    display: none;
+}
+
+        /* Max witdh */
+/*         
+@media screen and (max-width:1440px) {
+    body {
+        background-color:blue;
+    }
+    .large-leptop {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    body{
+        background-color: brown;
+    }
+    .large-leptop {
+        display: none;
+    }
+    .leptop {
+        display: block;
+    }
+} 
+
+@media screen and (max-width:768px) {
+    body {
+        background-color: chartreuse;
+    }
+
+    .leptop {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+}
+
+@media screen and (max-width:425px) {
+    body {
+        background-color: crimson;
+    }
+    .tablet {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+}
+ */
+
+        /* min witdh */
+
+
+@media screen and (min-width:425px) {
+    body {
+        background-color: darkgreen;
+    }
+    .mobile {
+        display: block;
+    }
+}
+
+@media screen and (min-width:768px) {
+    body {
+        background-color: darkred;
+    }
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+} 
+
+@media screen and (min-width:1024px) {
+    body {
+        background-color: deeppink;
+    }
+
+    .tablet {
+        display: none;
+    }
+    .leptop {
+        display: block;
+    }
+} 
+
+@media screen and (min-width:1440px) {
+    body {
+        background-color: gold;
+    }
+
+    .leptop {
+        display: none;
+    }
+    .large-leptop {
+        display: block;
+    }
+} 
+
+
+
+
+
+

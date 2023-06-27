@@ -1,0 +1,140 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+}
+
+nav div  {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-top: 20px;
+    
+    
+}
+
+nav div h1 {
+    font-size: 40px;
+    /* font-weight: 900; */
+}
+
+nav div ul {
+    display: flex;
+    gap: 40px;
+    font-size: 25px;
+    font-weight:500 ;
+    color: #000;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    
+}
+
+nav div ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+nav div li:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+nav button {
+    background-color: aqua;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: -2px -2px #000;
+    cursor: pointer;
+}
+
+
+.search {
+    display: flex;
+    gap: 10px;
+    
+}
+nav div input {
+    padding: 10px 30px;
+    
+}
+
+::placeholder {
+    font-size: 20px;
+
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left-section h1 {
+    font-size: 60px;
+    /* font-weight: 800; */
+}
+
+.left-section span {
+    font-size: 35px;
+    font-weight: 500;
+    color: #031b03;
+}
+
+
+
+.left-section p {
+    font-size: 25px;
+}
+
+.right-section img  {
+    height: 280px;
+
+}
+
+.right-section button {
+    margin-left: 100px;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: aqua;
+    border: none;
+    border-radius: 8px;
+    box-shadow: -2px -2px;
+    color: #000;
+
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer ul {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
