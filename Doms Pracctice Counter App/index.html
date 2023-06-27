@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Counter App</h1>
+        <div class="btn-container">
+            <button id="decrement-Btn">Decrement By 1</button>
+            <span id="displayValue">0</span>
+            <button id="increment-Btn">Increment By 1</button>
+        </div>
+        <button id="reset-Btn">Reset Value</button>
+    </main>
+        <script>
+            let decrement = document.getElementById("decrement-Btn");
+            let increment = document.getElementById("increment-Btn");
+            let valueBtn = document.getElementById("displayValue");
+            let resetBtn = document.getElementById("reset-Btn");
+
+            decrement.addEventListener ("click", () => {
+                let value = Number(displayValue.innerText)
+                if (value > 0){
+                    displayValue.innerText = value -1
+                }
+                else {
+                    alert("Negative Value Are Not Allowed")
+                }
+            })
+                
+            increment.addEventListener ("click", () => {
+                let value = Number(displayValue.innerText)
+                if (value >= 10){
+                    alert("10+ Value Not Allowed")
+                }
+                else{
+                 displayValue.innerText = value + 1 
+                }
+            })
+
+            resetBtn.addEventListener ("click", () => {
+                displayValue.innerText = 0
+            })
+        </script>
+       
+</body>
+</html>
